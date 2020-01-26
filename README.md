@@ -22,9 +22,9 @@ For expanding new input taxonomies, you need to read this section and format you
 
 **MAG-Full:** [https://drive.google.com/drive/folders/1jlmCXwGtchzQRyaALdDEAgwV578t4Ma3?usp=sharing](https://drive.google.com/drive/folders/1jlmCXwGtchzQRyaALdDEAgwV578t4Ma3?usp=sharing)
 
-**SemEval-Noun:**
+**SemEval-Noun:** [https://drive.google.com/drive/folders/1Y6kzdYZo7C09FZFKBW7ZXl6CX4ZWGX6s?usp=sharing](https://drive.google.com/drive/folders/1Y6kzdYZo7C09FZFKBW7ZXl6CX4ZWGX6s?usp=sharing)
 
-**SemEval-Verb:**
+**SemEval-Verb:** [https://drive.google.com/drive/folders/1mkKSADErJcoGk24WyzWzb7CxM2IitGKw?usp=sharing](https://drive.google.com/drive/folders/1mkKSADErJcoGk24WyzWzb7CxM2IitGKw?usp=sharing)
 
 ### Step 0.a (Required): Organize your input taxonomy along with node features into the following 3 files
 

@@ -1,0 +1,101 @@
+{
+    "name": "TaxoExpan",
+    "n_gpu": 1,
+
+    "arch": {
+        "type": "TaxoExpan",
+        "args": {
+            "propagation_method": "PGAT",
+            "readout_method": "WMR",
+            "matching_method": "BIM",
+            "in_dim": 250, 
+            "hidden_dim": 500,
+            "out_dim": 500,
+            "pos_dim": 50,
+            "num_layers": 1,
+            "heads": [4, 1],
+            "feat_drop": 0.1, 
+            "attn_drop": 0.1,
+            "hidden_drop": 0.1,
+            "out_drop": 0.1
+        }
+    },
+    "train_data_loader": {
+        "type": "MaskedGraphDataLoader",
+        "args":{
+            "data_path": "./data/MAG_FoS/computer_science.pickle.20190624.bin",
+            "sampling_mode": 1, 
+            "batch_size": 128,
+            "batch_type": "small_batch",
+            "negative_size": 31,
+            "expand_factor": 50, 
+            "shuffle": true,
+            "num_workers": 20,
+            "cache_refresh_time": 64,
+            "normalize_embed": true
+        }
+    },
+    "validation_data_loader": {
+        "type": "MaskedGraphDataLoader",
+        "args":{
+            "data_path": "./data/MAG_FoS/computer_science.pickle.20190624.bin",
+            "sampling_mode": 0,
+            "batch_size": 128,
+            "batch_type": "small_batch",
+            "negative_size": 256,
+            "expand_factor": 50, 
+            "shuffle": true,
+            "num_workers": 20,
+            "cache_refresh_time": 100000000,
+            "normalize_embed": true
+        }
+    },
+    "test_data_loader": {
+        "type": "MaskedGraphDataLoader",
+        "args":{
+            "data_path": "./data/MAG_FoS/computer_science.pickle.20190624.bin",
+            "sampling_mode": 0,
+            "batch_size": 1,
+            "batch_type": "large_batch",
+            "expand_factor": 50, 
+            "shuffle": true,
+            "num_workers": 20,
+            "cache_refresh_time": 100000000,
+            "normalize_embed": true
+        }
+    },
+    "optimizer": {
+        "type": "Adam",
+        "args":{
+            "lr": 0.001,
+            "weight_decay": 0,
+            "amsgrad": true
+        }
+    },
+    "loss": "info_nce_loss",
+    "metrics": [
+        "macro_mr", "micro_mr", "hit_at_1", "hit_at_3", "mrr_scaled_10"
+    ],
+    "lr_scheduler": {
+        "type": "ReduceLROnPlateau",
+        "args": {
+            "mode": "min",
+            "factor": 0.5,
+            "patience": 3,
+            "verbose": true
+        }
+    },
+    "trainer": {
+        "epochs": 100,
+
+        "save_dir": "/datadrive/structure_expan/saved/",
+        "save_period": 1,
+        "verbosity": 2,
+        
+        "monitor": "min val_macro_mr",
+        "early_stop": 10,
+        "grad_clip": -1,
+
+        "tensorboardX": true
+    }
+}
