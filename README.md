@@ -1,6 +1,6 @@
 # TaxoExpan
 
-Self-supervised Taxonomy Expansion
+The source code used for self-supervised taxonomy expansion method [TaxoExpan](), published in WWW 2020.
 
 ## Install Guide
 
