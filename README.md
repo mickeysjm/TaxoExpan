@@ -1,6 +1,6 @@
 # TaxoExpan
 
-The source code used for self-supervised taxonomy expansion method [TaxoExpan](), published in WWW 2020.
+The source code used for self-supervised taxonomy expansion method [TaxoExpan](https://arxiv.org/abs/2001.09522), published in WWW 2020.
 
 ## Install Guide
 
@@ -8,7 +8,7 @@ The source code used for self-supervised taxonomy expansion method [TaxoExpan]()
 
 From following page: [https://www.dgl.ai/pages/start.html](https://www.dgl.ai/pages/start.html)
 
-```Shell
+```
 conda install -c dglteam dgl-cuda10.0
 ```
 
