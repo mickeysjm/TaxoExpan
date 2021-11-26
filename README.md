@@ -14,17 +14,9 @@ conda install -c dglteam dgl-cuda10.0
 
 ## Data Preparation
 
-For dataset used in our WWW paper, you can directly download all input files below and skip this section.
+For dataset used in our WWW paper, you can directly download all input files from [Google Drive](https://drive.google.com/drive/folders/1-_yaDYDbivAW_ZA3em8WTbxDSnfIZfV9?usp=sharing) and skip this section.
 
 For expanding new input taxonomies, you need to read this section and format your datasets accordingly.
-
-**MAG-CS:** [https://drive.google.com/drive/folders/1kstUay8k7N7VqaGGrxMtEHfaAKQa_lAN?usp=sharing](https://drive.google.com/drive/folders/1kstUay8k7N7VqaGGrxMtEHfaAKQa_lAN?usp=sharing)
-
-**MAG-Full:** [https://drive.google.com/drive/folders/1jlmCXwGtchzQRyaALdDEAgwV578t4Ma3?usp=sharing](https://drive.google.com/drive/folders/1jlmCXwGtchzQRyaALdDEAgwV578t4Ma3?usp=sharing)
-
-**SemEval-Noun:** [https://drive.google.com/drive/folders/1Y6kzdYZo7C09FZFKBW7ZXl6CX4ZWGX6s?usp=sharing](https://drive.google.com/drive/folders/1Y6kzdYZo7C09FZFKBW7ZXl6CX4ZWGX6s?usp=sharing)
-
-**SemEval-Verb:** [https://drive.google.com/drive/folders/1mkKSADErJcoGk24WyzWzb7CxM2IitGKw?usp=sharing](https://drive.google.com/drive/folders/1mkKSADErJcoGk24WyzWzb7CxM2IitGKw?usp=sharing)
 
 ### Step 0.a (Required): Organize your input taxonomy along with node features into the following 3 files
 
@@ -165,7 +157,7 @@ The model prediction results are saved in **OUTPUT_RESULT.tsv**.
 
 ## Pretrained Models
 
-Pretained models for MAG-CS and MAG-Full datasets can be downloaded from [https://drive.google.com/drive/folders/1K9eJKJd-lqOpHkduRY9Ua1Eqgtyn6KmI?usp=sharing](https://drive.google.com/drive/folders/1K9eJKJd-lqOpHkduRY9Ua1Eqgtyn6KmI?usp=sharing)
+Pretained models for MAG-CS and MAG-Full datasets can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1-fdImuJDFwJI_shgA91yM-68omZLn1_c?usp=sharing).
 
 ## Saved Case Stuides
 
